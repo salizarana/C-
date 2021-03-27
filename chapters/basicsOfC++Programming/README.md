@@ -3,3 +3,5 @@
 | S.N. | Question                            | Source File Link   |
 | ---- | ----------------------------------- | ------------------ |
 | 1    | Print Hello World                   | [QN001](QN001.cpp) |
+| 2    | Different approach of commenting    | [QN002](QN002.cpp) |
+| 3    | Sum of two numbers                  | [QN003](QN003.cpp) |
