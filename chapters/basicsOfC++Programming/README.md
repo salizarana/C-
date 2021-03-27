@@ -6,3 +6,4 @@
 | 2    | Different approach of commenting    | [QN002](QN002.cpp) |
 | 3    | Sum of two numbers                  | [QN003](QN003.cpp) |
 | 4    | Illustrate enum                     | [QN004](QN004.cpp) |
+| 5    | Example of reference variable       | [QN005](QN005.cpp) |
