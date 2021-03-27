@@ -1,3 +1,7 @@
+/**
+ * Write a program to add and display sum of two numbers.
+ */
+
 #include<iostream>
 using namespace std;
 

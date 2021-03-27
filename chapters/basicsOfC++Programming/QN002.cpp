@@ -1,3 +1,7 @@
+/**
+ * Write a program to illustrate different approach of commenting.
+ */
+
 #include<iostream>
 
 int main(){
