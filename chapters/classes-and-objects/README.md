@@ -8,3 +8,5 @@
 | 4    | Display information of employees using array of object | [QN004](QN004.cpp) |
 | 5    | Example of object as function arguments                | [QN005](QN005.cpp) |
 | 6    | Average of two numbers using friend function           | [QN006](QN006.cpp) |
+| 7    |                                                        | [QN007](QN007.cpp) |
+| 8    | Example of default constructor                         | [QN008](QN008.cpp) |
