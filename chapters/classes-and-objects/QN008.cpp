@@ -10,9 +10,12 @@ class DemoDC {
    int num1, num2 ;
    
    public:
+   int num3, num4;
    DemoDC() {
       num1 = 10;
       num2 = 20;
+      num3 = 30;
+      num4 = 40;
    }
    
    void display() {
@@ -21,9 +24,12 @@ class DemoDC {
    }
 };
 
-int main() { 
+int main() {
    DemoDC obj;
+
    obj.display();
+   cout << "num3 = " << obj.num3 << endl;
+   cout << "num4 = " << obj.num4 << endl;
 
    return 0;
 }
