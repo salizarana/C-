@@ -5,48 +5,52 @@
 #include<iostream>
 using namespace std;
 
-class Weight {
-    int kilogram;
-    int gram;
+class Time {
+    int hour;
+    int min;
+    int sec;
 
     public:
     void getdata ();
     void putdata ();
-    void sumWeight (Weight,Weight) ;
+    void sumTime (Time,Time) ;
 } ;
 
-void Weight :: getdata() {
-    cout << "\nKilograms:";
-    cin >> kilogram;
-    cout << "Grams:";
-    cin >> gram;
+void Time :: getdata() {
+    cout << "\nHour: ";
+    cin >> hour;
+    cout << "Minute: ";
+    cin >> min;
+    cout << "Second: ";
+    cin >> sec;
 }
-void Weight :: putdata () { 
-    cout << kilogram << " Kgs. and " << gram << " grams.\n";
+void Time :: putdata () { 
+    cout << hour << " hours " << min << " minutes " << sec << " seconds\n";
 }
 
-void Weight :: sumWeight(Weight w1,Weight w2) {
-    gram = w1.gram + w2.gram;
-    kilogram = gram / 1000;
-    gram = gram % 1000;
-    kilogram += w1.kilogram + w2.kilogram;
+void Time :: sumTime(Time t1, Time t2) {
+    sec = t1.sec + t2.sec;
+	min = t1.min + t2.min + (sec / 60);
+	hour = t1.hour + t2.hour + (min / 60);
+	min = min % 60;
+	sec = sec % 60;
 }
 
 int main() {
-    Weight w1,w2 ,w3; 
-
-    cout << "Enter weight in kilograms and grams\n";
-    cout << "\nEnter weight #1" ;
-    w1.getdata();
-    cout << "\nEnter weight #2" ;
-    w2.getdata();
-    w3.sumWeight(w1,w2);
-    cout << "\nWeight #1 : ";
-    w1.putdata();
-    cout << "Weight #2 : ";
-    w2.putdata();
-    cout << "Total Weight : ";
-    w3.putdata();
+    Time t1, t2, t3;
+    
+    cout << "Enter time in hour, minute and second:\n";
+    cout << "\nEnter Time #1" ;
+    t1.getdata();
+    cout << "\nEnter Time #2" ;
+    t2.getdata();
+    t3.sumTime(t1, t2);
+    cout << "\nTime #1 : ";
+    t1.putdata();
+    cout << "Time #2 : ";
+    t2.putdata();
+    cout << "Total Time : ";
+    t3.putdata();
     
     return 0;
 }
