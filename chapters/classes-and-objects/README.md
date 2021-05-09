@@ -7,3 +7,4 @@
 | 3    | Defining member function outside the class             | [QN003](QN003.cpp) |
 | 4    | Display information of employees using array of object | [QN004](QN004.cpp) |
 | 5    | Example of object as function arguments                | [QN005](QN005.cpp) |
+| 6    | Average of two numbers using friend function           | [QN006](QN006.cpp) |
