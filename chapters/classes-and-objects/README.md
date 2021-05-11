@@ -11,3 +11,4 @@
 | 7    |                                                        | [QN007](QN007.cpp) |
 | 8    | Example of default constructor                         | [QN008](QN008.cpp) |
 | 9    | Example of parameterized constructor                   | [QN009](QN009.cpp) |
+| 10   | Example of copy constructor                            | [QN010](QN010.cpp) |
