@@ -10,3 +10,4 @@
 | 6    | Average of two numbers using friend function           | [QN006](QN006.cpp) |
 | 7    |                                                        | [QN007](QN007.cpp) |
 | 8    | Example of default constructor                         | [QN008](QN008.cpp) |
+| 9    | Example of parameterized constructor                   | [QN009](QN009.cpp) |
