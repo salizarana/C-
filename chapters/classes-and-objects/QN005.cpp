@@ -11,12 +11,12 @@ class Time {
     int sec;
 
     public:
-    void getdata ();
-    void putdata ();
-    void sumTime (Time,Time) ;
+        void getdata ();
+        void putdata ();
+        void sumTime (Time,Time) ;
 } ;
 
-void Time :: getdata() {
+void Time::getdata() {
     cout << "\nHour: ";
     cin >> hour;
     cout << "Minute: ";
@@ -24,11 +24,10 @@ void Time :: getdata() {
     cout << "Second: ";
     cin >> sec;
 }
-void Time :: putdata () { 
+void Time::putdata () { 
     cout << hour << " hours " << min << " minutes " << sec << " seconds\n";
 }
-
-void Time :: sumTime(Time t1, Time t2) {
+void Time::sumTime(Time t1, Time t2) {
     sec = t1.sec + t2.sec;
 	min = t1.min + t2.min + (sec / 60);
 	hour = t1.hour + t2.hour + (min / 60);
