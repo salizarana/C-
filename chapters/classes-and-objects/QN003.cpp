@@ -5,15 +5,15 @@
 #include<iostream>
 using namespace std;
 
-class Sum{
+class Sum {
     public:
-    int addition(int x, int y);
+        int addition(int x, int y);
 };
 
 /* Defining member function outside the class
 using scope resolution operator
 */
-int Sum::addition(int x, int y){
+int Sum::addition(int x, int y) {
     return x + y;
 }
 
