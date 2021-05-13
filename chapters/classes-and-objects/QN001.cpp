@@ -12,8 +12,8 @@ class student{
     int rollNo;
 
     public:
-    void getDetails(void);
-    void putDetails(void);
+        void getDetails(void);
+        void putDetails(void);
 };
 
 void student::getDetails(void){
@@ -24,7 +24,6 @@ void student::getDetails(void){
     cout << "Enter roll number: ";
     cin >> rollNo;
 }
-
 void student::putDetails(void){
     cout << "Name:" << name <<"\tAddress:" << address <<"\tRoll No.:" << rollNo;
 }
