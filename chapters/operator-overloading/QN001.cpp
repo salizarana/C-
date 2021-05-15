@@ -2,33 +2,38 @@
  * Write a program to show an example of unary operator overloading.
  */
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Count {
-    private:
-        int value;
+class Count
+{
+private:
+    int value;
 
-    public:
-        // Constructor to initializa count to 5
-        Count() : value(5) {}
+public:
+    // Constructor to initializa count to 5
+    Count() : value(5) {}
 
-        // Overload ++ when used as prefix
-        void operator ++ (){
-            ++value;
-        }
+    // Overload ++ when used as prefix
+    void operator++()
+    {
+        ++value;
+    }
 
-        // Overload ++ when used as postfix
-        void operator ++ (int) {
-            value++;
-        }
+    // Overload ++ when used as postfix
+    void operator++(int)
+    {
+        value++;
+    }
 
-        void display() {
-            cout << "Count: " << value << endl;
-        }
+    void display()
+    {
+        cout << "Count: " << value << endl;
+    }
 };
 
-int main() {
+int main()
+{
     Count count;
 
     // Call the "void operator ++ (int)" function
