@@ -2,22 +2,25 @@
  * Write a program defining member function outside the class.
  */
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Sum {
-    public:
-        int addition(int x, int y);
+class Sum
+{
+public:
+    int addition(int x, int y);
 };
 
 /* Defining member function outside the class
 using scope resolution operator
 */
-int Sum::addition(int x, int y) {
+int Sum::addition(int x, int y)
+{
     return x + y;
 }
 
-int main() {
+int main()
+{
     Sum obj;
     int x, y, sum;
 
@@ -30,4 +33,3 @@ int main() {
 
     return 0;
 }
-

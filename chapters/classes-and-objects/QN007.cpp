@@ -6,22 +6,27 @@
 #include <iostream>
 using namespace std;
 
-class Count {
-    private:
-        static int count;
+class Count
+{
+private:
+    static int count;
 
-    public:
-        void setNum() {
-            count++;
-        }
-        static void putCount() {
-            cout << "Count:" << count << endl; // static function accessing static member
-        }
+public:
+    void setNum()
+    {
+        count++;
+    }
+
+    static void putCount()
+    {
+        cout << "Count:" << count << endl; // static function accessing static member
+    }
 };
 
 int Count::count;
 
-int main() {
+int main()
+{
     Count c1, c2;
 
     c1.setNum();

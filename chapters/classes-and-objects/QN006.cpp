@@ -2,24 +2,29 @@
  * Write a program to calculate average of two numbers using friend function.
  */
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Average {
+class Average
+{
     int n1, n2;
 
-    public:
-        void getNum() {
-            cin >> n1 >> n2;
-        }
-        friend int average(Average a);
+public:
+    void getNum()
+    {
+        cin >> n1 >> n2;
+    }
+
+    friend int average(Average a);
 };
 
-int average(Average a) {
+int average(Average a)
+{
     return ((a.n1 + a.n2) / 2);
 }
 
-int main() {
+int main()
+{
     Average obj;
 
     cout << "Enter any two numbers:\n";

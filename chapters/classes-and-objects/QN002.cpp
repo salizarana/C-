@@ -3,24 +3,29 @@
  * class is defined.
  */
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Room {
-    public:
-        double length;
-        double breadth;
-        double height;
+class Room
+{
+public:
+    double length;
+    double breadth;
+    double height;
 
-        double calculateArea() {
-            return length * breadth;
-        }
-        double calculateVolume() {
-            return length * breadth * height;
-        }
+    double calculateArea()
+    {
+        return length * breadth;
+    }
+
+    double calculateVolume()
+    {
+        return length * breadth * height;
+    }
 };
 
-int main() {
+int main()
+{
     // create object of Room class
     Room room1;
 
@@ -35,4 +40,3 @@ int main() {
 
     return 0;
 }
-

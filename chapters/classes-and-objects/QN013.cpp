@@ -2,36 +2,45 @@
  * Write a program to illustrate constructor overloading.
  */
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Room {
-    private:
-        double length;
-        double breadth;
+class Room
+{
+private:
+    double length;
+    double breadth;
 
-    public:
-        // 1. Constructor with no arguments
-        Room() {
-            length = 1.9;
-            breadth = 4.2;
-        }
-        // 2. Constructor with two arguments
-        Room(double l, double b) {
-            length  = l;
-            breadth = b;
-        }
-        // 3. Constructor with one argument
-        Room(double len) {
-            length = len;
-            breadth = 7.2;
-        }
-        double calculateArea() {
-            return length * breadth;
-        }
+public:
+    // 1. Constructor with no arguments
+    Room()
+    {
+        length = 1.9;
+        breadth = 4.2;
+    }
+
+    // 2. Constructor with two arguments
+    Room(double l, double b)
+    {
+        length = l;
+        breadth = b;
+    }
+
+    // 3. Constructor with one argument
+    Room(double len)
+    {
+        length = len;
+        breadth = 7.2;
+    }
+
+    double calculateArea()
+    {
+        return length * breadth;
+    }
 };
 
-int main() {
+int main()
+{
     Room room1, room2(8.2, 6.6), room3(8.2);
 
     cout << "When no argument is passed: " << endl;
